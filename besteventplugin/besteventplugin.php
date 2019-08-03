@@ -26,12 +26,16 @@ define('BEP_PATCH_VERSON', '1');
 define('BEP_DIR', dirname( __FILE__ )); 
 
 class BestEventPlugin(){
+
+    public function run() {
+        require_once(BEP_DIR . 'includes' . DIRECTORY_SEPERATOR . 'core.php');
+    }
  
-  public function run(){
-  
-  }
- 
+    function __construct(){
+    }
 }
 
-$start_bep = new BestEventPlugin();
-$start_bep->run();
+$bep = new BestEventPlugin();
+$bep->run();
+
+
