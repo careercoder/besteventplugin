@@ -25,7 +25,7 @@ define('BEP_MINOR_VERSION', '1');
 define('BEP_PATCH_VERSON', '1');
 define('BEP_DIR', dirname( __FILE__ )); 
 
-class BestEventPlugin(){
+class BestEventPlugin{
 
     public function run() {
         require_once(BEP_DIR . 'includes' . DIRECTORY_SEPERATOR . 'core.php');
