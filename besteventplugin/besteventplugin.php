@@ -33,7 +33,7 @@ class BestEventPlugin
     public function run() 
     {     
      
-        if( is_admin() )
+        if( !is_admin() )
         { 
              $bep = new BestEventPluginFrontend(); 
         } 
