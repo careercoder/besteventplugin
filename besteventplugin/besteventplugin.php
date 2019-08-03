@@ -31,8 +31,15 @@ require_once(BEP_DIR . 'includes' . DIRECTORY_SEPERATOR . 'core.php');
 class BestEventPlugin{
 
     public function run() {     
-        $bep = new BestEventPluginFrontend();
-        return $bep->display();
+        
+        // select correct display end
+        if( is_admin() ){
+            $bep = new BestEventPluginFrontend();
+        } else {
+            $bep = new BestEventPluginAdmin();
+        }
+         
+         return $bep->display();
     }
  
     function __construct(){
