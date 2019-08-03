@@ -25,10 +25,14 @@ define('BEP_MINOR_VERSION', '1');
 define('BEP_PATCH_VERSON', '1');
 define('BEP_DIR', dirname( __FILE__ )); 
 
+// CORE INCLUDES
+require_once(BEP_DIR . 'includes' . DIRECTORY_SEPERATOR . 'core.php');
+
 class BestEventPlugin{
 
-    public function run() {
-        require_once(BEP_DIR . 'includes' . DIRECTORY_SEPERATOR . 'core.php');
+    public function run() {     
+        $bep = new BestEventPluginFrontend();
+        return $bep->display();
     }
  
     function __construct(){
