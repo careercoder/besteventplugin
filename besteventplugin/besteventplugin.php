@@ -24,3 +24,14 @@ define('BEP_MAJOR_VERSION', '1');
 define('BEP_MINOR_VERSION', '1');
 define('BEP_PATCH_VERSON', '1');
 define('BEP_DIR', dirname( __FILE__ )); 
+
+class BestEventPlugin(){
+ 
+  public function run(){
+  
+  }
+ 
+}
+
+$start_bep = new BestEventPlugin();
+$start_bep->run();
