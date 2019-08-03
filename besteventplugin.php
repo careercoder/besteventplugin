@@ -18,6 +18,10 @@
  * License:     GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  */
- defined('ABSPATH') or die();
+defined('ABSPATH') or die();
  
+define('BEP_MAJOR_VERSION', '1');
+define('BEP_MINOR_VERSION', '1');
+define('BEP_PATCH_VERSON', '1');
+define('BEP_DIR', dirname( __FILE__ )); 
  
